@@ -94,69 +94,33 @@ Licence URI: http://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <div id="research">
         <p>My research focusses on dark matter models both from a particle physics and cosmological point of view. I employ numerical simulations run on high performance computing clusters in order to define observables that constrain model parameters. Below, I summarize my research to date and describe promising projects that I hope to work on in the future.</p>
+        <hr>
         <header class="heading">Overview</header>
         <p>With experimental data from missions like <a target="_blank" href="https://www.cosmos.esa.int/web/planck">Planck</a>, <a target="_blank" href="https://cmb-s4.org/">CMB-S4</a>, <a target="_blank" href="http://www.sdss.org/">SDSS</a>, <a target="_blank" href="http://sci.esa.int/euclid/">Euclid</a>, <a target="_blank" href="http://hetdex.org/">HETDEX</a>, <a target="_blank" href="http://sci.esa.int/gaia/">Gaia</a> and many more mapping the cosmic microwave background, cosmic web and the Milky Way, cosmology has entered an era of high precision physics. With large numerical simulations, including the <a target="_blank" href="https://wwwmpa.mpa-garching.mpg.de/galform/virgo/millennium/">Millenium</a>, <a target="_blank" href="http://www.tng-project.org/">IllustrisTNG</a> and <a target="_blank" href="http://icc.dur.ac.uk/Eagle/">EAGLE</a> simulations, theoretical models can be tested against observations with high accuracy. In this way the standard model of cosmology could be established, which quantifies the different energy budgets of the universe.</p>
 
-        <p>Despite being a cornerstone of modern cosmology, the exact nature of dark matter (DM) remains unknown. The lack of evidence for weakly interacting massive particles (WIMPs) that could constitute dark matter has spawned increasing interest in alternative candidates. These include the theoretically well motivated QCD axion, which solves the strong CP problem and axion like particles (ALP) generically needed in string theories. My research to date has focussed on the latter. While indistinguishable from cold dark matter (CDM) on large scales, these ultra light scalar particles presumably form a coherent state on galactic scales. Quantum effects then induce a Jeans scale below which gravitational collapse is suppressed.</p>
+        <p>Despite being a cornerstone of modern cosmology, the exact nature of dark matter (DM) remains unknown. The lack of evidence for weakly interacting massive particles (WIMPs) that could constitute dark matter has spawned increasing interest in alternative candidates. These include the theoretically well motivated <a target="_blank" href="dx.doi.org/10.1103/PhysRevLett.38.1440">QCD axion</a>, which solves the strong CP problem and axion like particles (<a target="_blank" href="dx.doi.org/10.1016/j.physrep.2016.06.005">ALP</a>) generically needed in <a target="_blank" href="dx.doi.org/10.1103/PhysRevD.81.123530">string theories</a>. My research to date has focussed on the latter. While indistinguishable from cold dark matter (CDM) on large scales, these ultra light scalar particles presumably form a coherent state on galactic scales. Quantum effects then induce a <a target="_blank" href="dx.doi.org/10.1103/PhysRevLett.85.1158">Jeans scale</a> below which gravitational collapse is suppressed.</p>
 
-        <p>The evolution of this so called fuzzy dark matter (FDM) described by a non-relativistic coherent massive scalar field is governed by the Schr\"odinger-Poisson (SP) system . It has been simulated employing finite difference methods, pseudo spectral methods and Lagrangian fluid descriptions with FDM initial conditions.</p>
+        <p>The evolution of this so called fuzzy dark matter (<a target="_blank" href="dx.doi.org/10.1103/PhysRevLett.85.1158">FDM</a>) described by a non-relativistic coherent massive scalar field is governed by the Schr&ouml;dinger-Poisson (SP) system . It has been simulated employing <a target="_blank" href="dx.doi.org/10.1103/PhysRevLett.113.261302">finite difference</a> methods, <a target="_blank" href="https://arxiv.org/abs/1705.05845">pseudo spectral</a> methods and <a target="_blank" href="dx.doi.org/10.1103/PhysRevD.94.123523">Lagrangian fluid</a> descriptions with FDM initial conditions.</p>
+        <hr>
+        <div class="wrapper row2">
+           <img src="../images/merger2.png" alt="Binary Merger" style="height: auto; width: 100%; object-fit: contain"/>
+        </div>
+        <hr>
         <header class="heading">Past Work</header>
-        <p>In [Schwabe2016] my collaborators and I investigated binary mergers of solitonic cores by extending the cosmology code Nyx to solve the SP-system with a finite difference scheme. The emergence of these cores in the inner part of each DM halo is the main distinction between CDM and FDM. The precise knowledge of their evolution is thus key to defining discriminating observables. We found that mass increase depends almost exclusively on predecessor core masses. Our results have been confirmed and extended in [Mocz2017]. With this simple recipe using a semi-analytic approach we were then able to reproduce the numerically found relation between core and host halo mass [Du].</p>
+        <p><a target="_blank" href="dx.doi.org/10.1103/PhysRevD.94.043513">My collaborators and I</a> investigated binary mergers of solitonic cores by extending the cosmology code Nyx to solve the SP-system with a finite difference scheme. The emergence of these cores in the inner part of each DM halo is the main distinction between CDM and FDM. The precise knowledge of their evolution is thus key to defining discriminating observables. We found that mass increase depends almost exclusively on predecessor core masses. Our results have been <a target="_blank" href="https://arxiv.org/abs/1705.05845">confirmed and extended</a>. With this simple recipe using a semi-analytic approach we were then able to reproduce the numerically found <a target="_blank" href="dx.doi.org/10.1103/PhysRevD.95.043519">relation between core and host halo mass</a>.</p>
 
-        <p>In [prep] Jens Niemeyer and I present a new approach to solve the SP-system. It combines the numerical efficiency of Lagrangian particle based codes on large under dense regions like voids while correctly reproducing the dynamics of axionic cosmologies in over dense regions such as filaments and halos. The code is realized as an extension of the Enzo code. Comparison with both n-body and finite difference methods already yield promising results.</p>
-
+        <p>Together with <a target="_blank" href="https://www.uni-goettingen.de/de/111941.html">Jens Niemeyer</a> I work on a new approach to solve the SP-system. It combines the numerical efficiency of Lagrangian particle based codes on large under dense regions like voids while correctly reproducing the dynamics of axionic cosmologies in over dense regions such as filaments and halos. The code is realized as an extension of the <a target="_blank" href="http://enzo-project.org/">Enzo</a> code. Comparison with both n-body and finite difference methods already yield promising results.</p>
+        <hr>
         <header class="heading">Future Projects</header>
 
-        <p><b>Code Development:</b> I hope to continue employing the above described code. With it existing Lyman-$\alpha$ constraints can be investigated in a more realistic set up. So far axionic initial conditions have been evolved to the strongly non-linear regime simply by N-body simulations
-        neglecting coherence effects of the FDM field. Notable exception are \cite{Veltmaat2016,Armengaud2017}, which analyse the effects of the additional gradient energy on cosmological FDM dynamics. Even though the corrections on scales relevant for Lyman-$\alpha$ constraints are small, they can be expected to be sizable enough to be important when comparing numerical results to high precision data.
+        <p><b>Code Development:</b> I hope to continue employing the above described code. With it existing Lyman-&alpha; constraints can be investigated in a more realistic set up. So far axionic initial conditions have been evolved to the strongly non-linear regime simply by N-body simulations
+        neglecting coherence effects of the FDM field. Notable exceptions are <a target="_blank" href="dx.doi.org/10.1103/PhysRevD.94.123523">[Veltmaat2016]</a>,<a target="_blank" href="dx.doi.org/10.1093/mnras/stx1870">[Armengaud2017]</a>, which analyse the effects of the additional gradient energy on cosmological FDM dynamics. Even though the corrections on scales relevant for Lyman-&alpha; constraints are small, they can be expected to be sizable enough to be important when comparing numerical results to high precision data.
 
         <p><b>Baryonic Physics:</b> With the above code structure formation in FDM cosmologies can be refined by including baryonic physics already implemented within the Enzo code. The results can then be compared to halo mass functions and subhalo distributions obtained observationally from gravitational lensing and stellar distributions and dynamics. Due to coherence effects in FDM cosmologies, FDM and CDM differ most on galactic and sub galactic scales. Reliable simulations of structure formation are thus of particular importance for constraining ALP masses.
 
-        <p><b>Self-Interaction:</b> For FDM the instanton induced cosine potential is extended only up to the quadratic mass term. Taking also the fourth order term into account introduces an attractive self-interaction. First analytic approximations show that it dominates the coherence effects on large scales and partially counteracts them on galactic scales when considering typical values for ALP mass and decay constant \cite{interaction}. Since the potential within the Enzo code is calculated on a Euclidian grid, it is straight forward to implement the self-interaction as an additional term to the gravitational and gradient potential. Such a numerical simulation can quantify and refine the existing analytical results. It can also be employed when considering the QCD axion.
+        <p><b>Self-Interaction:</b> For FDM the instanton induced cosine potential is extended only up to the quadratic mass term. Taking also the fourth order term into account introduces an attractive self-interaction. <a target="_blank" href="https://arxiv.org/abs/1709.07946">First analytic approximations</a> show that it dominates the coherence effects on large scales and partially counteracts them on galactic scales when considering typical values for ALP mass and decay constant. Since the potential within the Enzo code is calculated on a Euclidian grid, it is straight forward to implement the self-interaction as an additional term to the gravitational and gradient potential. Such a numerical simulation can quantify and refine the existing analytical results. It can also be employed when considering the QCD axion.
 
-        <p>In addition to the above outlined projects I am looking forward to collaborating internationally on other dark matter related research topics. These might involve the QCD axion or ALPs but the methods I employ could be applicable to many different dark matter models. I hope to investigation their effects on structure formation on small scales and at high redshifts. The results could be used for forecasts and analysis preparation for CMB-S4, Euclid,  HETDEX, and other upcoming and current surveys.</p>
-
-
-        <figure>
-          <header class="heading">Bound Multi Merger of Solitonic Cores</header>
-          <ul class="nospace clear">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qeTReRmWxNs" frameborder="0" allowfullscreen></iframe>
-          </ul>
-          <!-- <figcaption>Gallery Description Goes Here</figcaption> -->
-        </figure>
-        <hr>
-        <figure>
-          <header class="heading">Unbound Binary Merger of Solitonic Cores</header>
-          <ul class="nospace clear">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eul-JpkWmTk" frameborder="0" allowfullscreen></iframe>
-          </ul>
-          <!-- <figcaption>Gallery Description Goes Here</figcaption> -->
-        </figure>
-        <hr>
-        <figure>
-          <header class="heading">Bound Binary Mergers of Solitonic Cores</header>
-          <ul class="nospace clear">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mH5j1IcVkB0" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/G5Vd--tzGXM" frameborder="0" allowfullscreen></iframe> -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7pWsJ18wGSI" frameborder="0" allowfullscreen></iframe>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rlQNL_quh08" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/x1cIzSVkqwM" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qCXcWsM2mRo" frameborder="0" allowfullscreen></iframe> -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAd7tp7mBGI" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vihNrOD-vz0" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3rQ5LNMIiqA" frameborder="0" allowfullscreen></iframe>
-            <!-- <li class="one_third first"><iframe width="560" height="315" src="https://www.youtube.com/embed/mH5j1IcVkB0" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/G5Vd--tzGXM" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/7pWsJ18wGSI" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_thrid first"><iframe width="560" height="315" src="https://www.youtube.com/embed/rlQNL_quh08" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/x1cIzSVkqwM" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/qCXcWsM2mRo" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third first"><iframe width="560" height="315" src="https://www.youtube.com/embed/TAd7tp7mBGI" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/vihNrOD-vz0" frameborder="0" allowfullscreen></iframe></li>
-            <li class="one_third"><iframe width="560" height="315" src="https://www.youtube.com/embed/3rQ5LNMIiqA" frameborder="0" allowfullscreen></iframe></li> -->
-          </ul>
-          <!-- <figcaption>Gallery Description Goes Here</figcaption> -->
-        </figure>
+        <p>In addition to the above outlined projects I am looking forward to collaborating internationally on other dark matter related research topics. These might involve the QCD axion or ALPs but the methods I employ could be applicable to many different dark matter models. I hope to investigation their effects on structure formation on small scales and at high redshifts. The results could be used for forecasts and analysis preparation for <a target="_blank" href="https://cmb-s4.org/">CMB-S4</a>, <a target="_blank" href="http://sci.esa.int/euclid/">Euclid</a>, <a target="_blank" href="http://hetdex.org/">HETDEX</a>, and other upcoming and current surveys.</p>
       </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
